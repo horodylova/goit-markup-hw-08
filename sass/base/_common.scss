@@ -1,0 +1,61 @@
+address {
+    font-style: normal;
+}
+
+.page {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    color: var(--color-primary);
+
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+
+
+.current {
+    color: var(--color-blue);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+
+img {
+    display: block;
+}
+
+
+
+.media:hover,
+.media::after {
+    fill: var(--color-blue);
+}
+
+.color-link {
+    fill: var(--color-link);
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:after {
+    fill: var(--color-blue);
+}
+}
+
+
+
+

@@ -1,0 +1,42 @@
+.duties {
+    margin: 0 auto;
+    padding: 94px 0;
+}
+
+.duties-title {
+    margin: 0 0 50px 0;
+
+    color: var(--color-grey);
+} 
+
+.duties .duties-list {
+    display: flex;
+    gap: 30px;
+}
+
+.overlay-wrap {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+
+    padding: 27px;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: var(--color-white);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+ 
+ 
