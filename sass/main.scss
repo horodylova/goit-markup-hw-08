@@ -1,15 +1,12 @@
-@import './components/section';
-@import './components/container';
-@import './components/media';
-@import './utils/mixin';
-
-
-
 @import './base/reset';
 @import './base/common';
 @import './base/vars';
 
 @import './utils/hidden';
+
+
+@import './components/container';
+@import './components/media';
 
 
 @import './layouts/header';
@@ -21,6 +18,6 @@
 @import './layouts/footer';
 @import './layouts/modal';
 
-@import './portfolio/portfolio.scss';
+@import './portfolio/portfolio.scss'
 
 

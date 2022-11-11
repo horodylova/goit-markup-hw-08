@@ -309,7 +309,6 @@ img {
 
 .advantages {
   padding-top: 94px;
-  padding-bottom: 47px;
 }
 
 .advantages__list {
@@ -495,9 +494,7 @@ img {
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
-
-.media:hover,
-.media:focus {
+.media:hover, .media:focus {
   color: var(--color-white);
   background-color: var(--color-blue);
 }
@@ -592,6 +589,10 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   margin-top: 9px;
+}
+
+.email {
+  margin-bottom: 9px;
 }
 
 .post-address {

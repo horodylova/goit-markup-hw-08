@@ -91,11 +91,12 @@
     transition: background-color var(--transition-duration)
     var(--transition-timing-function),
   color var(--transition-duration) var(--transition-timing-function);
-}
 
-.media:hover,
-.media:focus {
+    &:hover,
+    &:focus {
     color: var(--color-white);
     background-color: var(--color-blue);
 
 }
+}
+
