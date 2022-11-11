@@ -1,42 +1,107 @@
-.advantages {
-    padding-top: 94px;
-    padding-bottom: 47px;
-}
 
-.advantages__list {
-    display: flex; 
-    gap: 30px;
-} 
 
- .advantages__item {
-flex-basis: calc((100% - 3 * 30px) / 4);
-}
 
-  .advantages__img {
-    display: flex;
-    width: 270px;
-    height: 120px;
-    background-color:var(--background-second);
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
+ .advantages {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    @include desktop {
+      // padding-top: 94px;
+      padding-bottom: 47px;
+    }
+  }
+
+ .advantages__list {
+    
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      @include desktop {
+        display: flex;
+        gap: 30px;
+      }
+    }
+
+.advantages__item:not(:last-child) {
+   
+    width: 100%;
     margin-bottom: 30px;
-  } 
+   
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 0;
+    }
+    
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+      
+    }
+  }
 
-.advantages__subtitle {
+  
+
+// .advantages__subtitle {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+
+//     color: var(--color-grey);
+//     text-transform: uppercase;
+//     margin: 0 auto;
+//     margin-bottom: 10px;
+// }
+
+// .advantages__descr {
+//     margin: 0 auto;
+//     line-height: 1.71;
+//     font-size: 14px;
+//     color: var(--color-primary);
+// }
+ 
+
+.features 
+  
+
+  
+  .features__item
+  
+  .features__img 
+  
+  .feature__descr {
+    width: 100%;
+    @include tablet {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
+  }
+  
+  .features__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-
-    color: var(--color-grey);
     text-transform: uppercase;
-    margin: 0 auto;
+    color: var(--primary-text-color);
     margin-bottom: 10px;
-}
-
-.advantages__descr {
-    margin: 0 auto;
-    line-height: 1.71;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+    @include desktop {
+      text-align: left;
+    }
+  }
+  
+  .feature__text {
     font-size: 14px;
-    color: var(--color-primary);
-}
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+    @include tablet {
+    }
+  }
