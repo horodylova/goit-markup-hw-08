@@ -21,10 +21,18 @@ address {
 }
 
 
-
 .current {
     color: var(--color-blue);
 }
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
 
 .section-title {
     font-weight: 700;
@@ -34,11 +42,11 @@ address {
 }
 
 
-
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
-
 
 
 .media:hover,
@@ -56,6 +64,4 @@ img {
 }
 }
 
-
-
-
+ 
