@@ -1,8 +1,11 @@
-@import './base/reset';
-@import './base/common';
+@import './utils/mixin';
 @import './base/vars';
 
-@import './utils/mixin';
+@import './base/reset';
+@import './base/common';
+
+
+
 @import './utils/hidden';
 
 

@@ -3,34 +3,73 @@
     text-align: center;
     padding: 118px 60px;
     margin: 0 auto;
+    
 
-    background-image:var(--gradient), url(/img/header/Header\ img_mob.jpg);
+    background-image:var(--gradient), url(/img/header/header-desk.jpg);
     background-color: #c4c4c4;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    @include retina {
-      background-image:var(--gradient) url(/img/header/Header\ img_retina.jpg);
-    }
-   
-    @include tablet {
-      background-image:var(--gradient), url(/img/header/Header-tablet.jpg);
-      @include retina {
-        background-image: var(--gradient), url(/img/header/Header-tablet_2x.jpg);
-      }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    
+     background-image: url('/img/header/header-desk_2x.jpg');
     }
 
-    @include desktop {
-      max-width: 1600px;
-      padding-top: 200px;
-      padding-bottom: 200px;
-      background-image: var(--gradient), url(/img/header/header-desk.jpg);
-      @include retina {
-        background-image: var(--gradient), url(/img/header/header-desk_2x.jpg);
+    }
+
+
+  @media screen and (min-width:480px){
+    .hero {
+      background-image: var(--gradient), url(/img/header/Header\ img_mob.jpg)
+    }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: var(--gradient), url(/img/header/Header\ img_retina.jpg);
+      }
       }
     }
-}
+   
+    @media screen and (min-width:768px) {
+      .hero{
+        background-image: var(--gradient), url(/img/header/Header-tablet.jpg)
+      }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: var(--gradient), url(/img/header/Header-tablet_2x.jpg);
+      }
+      }
+ }
+  
+
+
+    // @include retina {
+    //   background-image:var(--gradient) url(/img/header/Header\ img_retina.jpg);
+    // }
+   
+    // @include tablet {
+    //   background-image:var(--gradient), url(/img/header/Header-tablet.jpg);
+    //   @include retina {
+    //     background-image: var(--gradient), url(/img/header/Header-tablet_2x.jpg);
+    //   }
+    // }
+
+    // @include desktop {
+    //   max-width: 1600px;
+    //   padding-top: 200px;
+    //   padding-bottom: 200px;
+    //   background-image: var(--gradient), url(/img/header/header-desk.jpg);
+    //   @include retina {
+    //     background-image: var(--gradient), url(/img/header/header-desk_2x.jpg);
+    //   }
+    // }
+
  
 .hero-title {
 
@@ -48,22 +87,40 @@
     max-width: 360px; 
     letter-spacing: 0.06em;
 
-
-    @include tablet {
+    @media screen and (min-width:480px) {
+      .hero-title{
         font-size: 26px;
+      } 
     }
-    
-    @include desktop {
+
+    @media screen and (min-width:768px) {
+      font-size: 26px;
+    }
+
+
+    // @include tablet {
+    //     font-size: 26px;
+    // }
+
+   @media screen and (min-width:1200px) {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
-     }
+   }
+    }
+    
+    // @include desktop {
+    // font-size: 44px;
+    // line-height: 1.36;
+    // max-width: 696px;
+    //  }
 
     @media screen and (min-width: 480px) {
+      .hero-title {
         font-size: 26px;
+      }
         }
-    }
-
+  
 
 .hero-button {
     background-color: var(--color-blue);
@@ -71,21 +128,28 @@
     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.15);
 
     min-width: 200px;
-    @include desktop {
-      min-width: 216px;
-    }
 
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.87;
-    // letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 
-    // width: 216px;
-    // height: 50px;
+    padding: 10px 24px;
+
+    width: 216px;
+    height: 50px;
 
     border: 0;
     transition: color var(--transition-duration) var(--transition-timing-function);
-}
+
+    @media screen and (min-width:1200px) {
+      .hero-button {
+        min-width: 216px;
+      }
+    }
+    // @include desktop {
+    //   min-width: 216px;
+    }
 
 .hero-button:hover,
 .hero-button:focus {
