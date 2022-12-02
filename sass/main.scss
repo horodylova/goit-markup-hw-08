@@ -1,4 +1,5 @@
 @import './utils/mixin';
+@import './components/container';
 @import './base/vars';
 
 @import './base/reset';
@@ -9,7 +10,7 @@
 @import './utils/hidden';
 
 
-@import './components/container';
+
 @import './components/media';
 
 

@@ -3,10 +3,22 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    @include tablet {
+    // @include tablet {
+    //   width: 768px;
+    // }
+    // @include desktop {
+    //   width: 1200px;
+    // }
+  }
+
+  @media screen and (min-width:768px){
+    .container {
       width: 768px;
     }
-    @include desktop {
+  }
+
+  @media screen and (min-width:1200px){
+    .container {
       width: 1200px;
     }
   }

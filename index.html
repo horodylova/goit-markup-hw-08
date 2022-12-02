@@ -70,7 +70,7 @@
           </div>
       </section> -->
 
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden advantages-title">Здібності команди</h2>
           <ul class="advantages__list">
@@ -88,7 +88,7 @@
               </p>
               </div>
             </li>
-            <li class="advantages-list list">
+            <li class="advantages__item list">
               <div class="advantages__img">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-clock-1-2-1"></use>
@@ -102,7 +102,7 @@
               </p>
               </div>
             </li>
-            <li class="advantages-list list">
+            <li class="advantages__item list">
               <div class="advantages__img">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-diagram-1-2-1"></use>
@@ -115,7 +115,7 @@
               </p>
              </div>
             </li>
-            <li class="advantages-list list">
+            <li class="advantages__item list">
               <div class="advantages__img">
                 <svg width="70" height="70">
                   <use href="./img/sprite.svg#icon-astronaut-1-2-1"></use>
@@ -131,39 +131,65 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>  -->
 
       <!-- <section class="duties section">
         <div class="container">
           <h2 class="duties-title section-title">Чим ми займаємося</h2>
-          <ul class="duties-list">
-            <li class="duties-examples list">
-              <div class="overlay-wrap">
-                <picture>
-                  <source srcset="">
-
-                </picture> -->
-              <!-- <img
-                src="./img/box_1.jpg"
-                width="370"
-                alt="Праця за комп'ютером"
-              /> -->
-              <!-- <p class="overlay-text">Десктопні додатки</p>
+          <ul class="duties-list list">
+            <li class="duties-examples">
+              <picture>
+                <source
+                  srcset="
+                     1x,
+                     2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/duties/box 1.jpg"
+                  alt="людина тримає телефон"
+                  width="370"
+                  height="294"
+                />
+             <p class="overlay-text">Десктопні додатки</p>
             </div>
             </li>
             <li class="duties-examples list">
               <div class="overlay-wrap">
-                <img
-                src="./img/box_2.jpg"
-                width="370"
-                alt="Порівняння телефонів"
-              />
+                <picture>
+                  <source
+                    srcset="
+                        1x,
+                       2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/duties/box 2.jpg"
+                    alt="мобільні телефони"
+                    width="370"
+                    height="294"
+                  />
               <p class="overlay-text">Мобільні додатки</p>
               </div>
             </li>
             <li class="duties-examples list">
               <div class="overlay-wrap">
-                <img src="./img/box_3.jpg" width="370" alt="Читання з планшета" />
+                <picture>
+                  <source
+                    srcset="
+                       1x,
+                       2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/duties/box 3.jpg"
+                    alt="планшетний екран"
+                    width="370"
+                    height="294"
+                  />
                 <p class="overlay-text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -171,17 +197,38 @@
         </div>
       </section> -->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-icon list">
-              <img
-                src="./img/igor.jpg"
-                width="270"
-                alt="Ігор Дем'яненко фото"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                  img/team/igor.jpg   1x,
+                  img/team/imgdesk1.jpg   2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgtab1.jpg 1x,
+                  img/team/imgtab1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgmob1.jpg  1x,
+                  img/team/imgmob2@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/igor.jpg"
+                  alt="фото Ігоря Дем'яненка"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-role">Product Designer</p>
@@ -218,12 +265,33 @@
               </div>
             </li>
             <li class="team-icon list">
-              <img
-                src="./img/olga.jpg"
-                width="270"
-                alt="Ольга Рєпіна фото"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                  img/team/olga.jpg  1x,
+                  img/team/imgdesk2.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgtab2.jpg  1x,
+                  img/team/imgtab2@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgmob2.jpg  1x,
+                  img/team/imgmob2@2x.jpg   2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/olga.jpg"
+                  alt="фото Ольги Рєпіної"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-role">Frontend Developer</p>
@@ -260,12 +328,33 @@
               </div>
             </li>
             <li class="team-icon list">
-              <img
-                src="./img/mykola.jpg"
-                width="270"
-                alt="Микола Тарасов фото"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                  img/team/mykola.jpg 1x,
+                  img/team/imgdesk3.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgtab3.jpg  1x,
+                  img/team/imgtab3@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgmob3.jpg  1x,
+                  img/team/imgmob3@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/mykola.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-role">Marketing</p>
@@ -302,12 +391,33 @@
               </div>
             </li>
             <li class="team-icon list">
-              <img
-                src="./img/michail.jpg"
-                width="270"
-                alt="Михайло Єрмаков фото"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                  img/team/michail.jpg  1x,
+                  img/team/imgdesk4.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgtab4.jpg  1x,
+                  img/team/imgtab4@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  img/team/imgmod4.jpg  1x,
+                      img/team/imgmob4@2x.jpg   2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/michail.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-role">UI Designer</p>
@@ -345,7 +455,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="clients section">
         <div class="container">
