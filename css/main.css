@@ -456,22 +456,25 @@ img {
 .duties {
   display: none;
 }
-
 @media screen and (min-width: 1200px) {
   .duties {
     display: block;
-    margin: 0 auto;
     padding: 94px 0;
   }
 }
+
 .duties-title {
   margin: 0 0 50px 0;
   color: var(--color-grey);
 }
 
-.duties .duties-list {
+.duties-list {
   display: flex;
   gap: 30px;
+}
+
+.duties-examples {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .overlay-wrap {
