@@ -460,7 +460,7 @@ img {
   .duties {
     display: block;
     margin: 0 auto;
-    padding: 94px 0;
+    padding-top: 94px;
   }
 }
 
