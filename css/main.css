@@ -155,10 +155,19 @@ img {
   color: var(--color-blue);
 }
 
-.nav {
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    display: flex;
+  }
 }
 
 .nav__list {
@@ -166,6 +175,38 @@ img {
   gap: 50px;
   align-items: center;
   margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    display: flex;
+  }
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+  }
+}
+
+.header_list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .current::after {
@@ -189,23 +230,27 @@ img {
   display: flex;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: baseline;
+    gap: 30px;
+  }
 }
 
 .nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -231,10 +276,33 @@ img {
 .contacts .contacts__link:hover, .contacts .contacts__link:focus {
   color: var(--color-blue);
 }
+@media screen and (min-width: 1200px) {
+  .contacts .contacts__link:hover, .contacts .contacts__link:focus {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
-.contacts__list .link {
+.contacts__list {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    margin-bottom: 10px;
+  }
+  .contacts__list:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .contacts__list:last-child {
+    margin-right: 0;
+  }
 }
 
 .contacts__link {
@@ -247,14 +315,19 @@ img {
 
 .contacts__item {
   margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.contacts__item:hover, .contacts__item:focus {
+  fill: var(--accent-color);
 }
 
 .hero {
-  width: 100%;
   text-align: center;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
-  background-image: var(--gradient), url(/img/header/header-desk.jpg);
+  background-image: var(--gradient), url("/img/header/header-desk.jpg");
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,27 +338,27 @@ img {
     background-image: url("/img/header/header-desk_2x.jpg");
   }
 }
-
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: var(--gradient), url(/img/header/Header\ img_mob.jpg);
+    background-image: var(--gradient), url("/img/header/Header img_mob.jpg");
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(/img/header/Header\ img_retina.jpg);
+    background-image: var(--gradient), url("/img/header/Header img_retina.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: var(--gradient), url(/img/header/Header-tablet.jpg);
+    background-image: var(--gradient), url("/img/header/Header-tablet.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-resolution: 192dpi), (min-resolution: 192dpi) and (min-resolution: 2dppx), (min-resolution: 2dppx) and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) and (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(/img/header/Header-tablet_2x.jpg);
+    background-image: var(--gradient), url("/img/header/Header-tablet_2x.jpg");
   }
 }
+
 .hero-title {
   text-align: center;
   margin: 0 auto;
@@ -293,13 +366,13 @@ img {
   color: var(--color-white);
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 20px;
   line-height: 1.36;
   max-width: 360px;
   letter-spacing: 0.06em;
 }
 @media screen and (min-width: 480px) {
-  .hero-title .hero-title {
+  .hero-title {
     font-size: 26px;
   }
 }
@@ -316,11 +389,6 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero-title {
-    font-size: 26px;
-  }
-}
 .hero-button {
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -337,7 +405,7 @@ img {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 @media screen and (min-width: 1200px) {
-  .hero-button .hero-button {
+  .hero-button {
     min-width: 216px;
   }
 }
