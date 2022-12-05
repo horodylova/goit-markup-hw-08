@@ -25,7 +25,6 @@
 
     <header class="header">
       <div class="container  header-container">
-        <div class="nav__logo">
           <a href="" class="link logo"
             ><span class="logo__decorate">Web</span>Studio</a>
           <nav class="nav">
@@ -41,12 +40,10 @@
               </li>
             </ul>
           </nav>
-        </div>
-        <div>
           <ul class="contacts">
             <li class="list contacts__list">
               <a class="link contacts__link color-link" href="mailto:info@devstudio.com">
-                <svg class="contacts__item" style="height:12px; width:16px">
+                <svg class="contacts__item contacts__mail" style="height:12px; width:16px">
                   <use href="./img/sprite.svg#icon-envelope-1"></use>
                 </svg>
                 info@devstudio.com</a
@@ -54,14 +51,86 @@
             </li>
             <li class="list contacts__list">
               <a class="link contacts__link color-link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__item" style="height:16px; width: 10px">
+                  <svg class="contacts__item contacts__tel" style="height:16px; width: 10px">
                     <use href="./img/sprite-telephone.svg#icon-smartphone-2-1"></use>
                   </svg>+38 096 111 11 11</a>
             </li>
           </ul>
+          <button type="button" class="menu-open-btn" data-menu-open>
+            <svg width="40" height="40">
+              <use href="./img/sprite.svg#icon-menu_40px-1"></use>
+            </svg>
+          </button>
         </div>
-      </div>
-    </header>
+  
+        <div class="mob-menu" data-menu>
+          <div class="mob-container">
+            <div class="mob-menu__top">
+              <button class="mob-menu-close-btn" type="button" data-menu-close>
+                <svg width="40" height="40">
+                  <use
+                    href="./img/sprite.svg#icon-close_40px-1"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="mob-nav">
+                <li class="mob-nav__item">
+                  <a
+                    class="mob-nav__link mob-nav__link--current link"
+                    href="./index.html"
+                  >
+                    Студія
+                  </a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link link" href="./portfolio.html">Портфоліо </a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link link" href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__bottom">
+              <ul class="mob-contacts">
+                <li class="mob-contacts__item">
+                  <a class="mob-contacts__link--tel link" href="tel:+380961111111"
+                    >+38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mob-contacts__item">
+                  <a
+                    class="mob-contacts__link--mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mob-soc">
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="#" aria-label="Instagram"
+                    >Instagram
+                  </a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="#" aria-label="Twitter"
+                    >Twitter
+                  </a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="#" aria-label="Facebook"
+                    >Facebook
+                  </a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="#" aria-label="LinkedIn"
+                    >LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
 
     <main>
       <!-- <section class="hero overlay">
