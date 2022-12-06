@@ -68,12 +68,18 @@
     letter-spacing: 0.02em;
     color: var(--color-grey);
 
+    position: relative;
+
     transition: color var(--transition-duration) var(--transition-timing-function);
 
     &:hover,
     &:focus {
         color: var(--color-blue);
     }
+}
+
+.current {
+  color: var(--color-blue);
 }
 
 .current::after {
@@ -92,6 +98,9 @@
     border-radius: 2px;
 
     transition: color var(--transition-duration) var(--transition-timing-function);
+    @media screen and (min-width:1200px) {
+      margin: -2px;
+    }
 }
 
 .contacts {
