@@ -889,7 +889,6 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   height: 92px;
-  width: 170px;
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
 .clients__icon:hover, .clients__icon:focus {
