@@ -476,7 +476,7 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
-  background-image: var(--gradient), url("/img/header/header-desk.jpg");
+  background-image: var(--gradient), url(../img/header/header-desk.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -484,27 +484,27 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/img/header/header-desk_2x.jpg");
+    background-image: url(../img/header/header-desk_2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: var(--gradient), url("img/header/Header_img_mob.jpg");
+    background-image: var(--gradient), url(../img/header/Header_img_mob.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url("img/header/Header_img_retina.jpg");
+    background-image: var(--gradient), url(../img/header/Header_img_retina.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: var(--gradient), url("/img/header/Header-tablet.jpg");
+    background-image: var(--gradient), url(../img/header/Header-tablet.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-resolution: 192dpi), (min-resolution: 192dpi) and (min-resolution: 2dppx), (min-resolution: 2dppx) and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) and (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url("/img/header/Header-tablet_2x.jpg");
+    background-image: var(--gradient), url(../img/header/Header-tablet_2x.jpg);
   }
 }
 
