@@ -305,7 +305,13 @@ display: none;
   .mob-soc {
     display: flex;
     justify-content: center;
-    width: 356px;
+    @media screen and (min-width: 768px) {
+      width: 356px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 356px;
+    }
   }
   
   .mob-soc__item {

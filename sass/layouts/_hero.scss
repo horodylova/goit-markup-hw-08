@@ -39,6 +39,12 @@
           background-image: var(--gradient), url(../img/header/Header-tablet_2x.jpg);
         }
     }
+
+    @media screen and(min-width:1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      
+    }
 }
 
  

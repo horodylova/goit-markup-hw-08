@@ -440,7 +440,16 @@ img {
 .mob-soc {
   display: flex;
   justify-content: center;
-  width: 356px;
+}
+@media screen and (min-width: 768px) {
+  .mob-soc {
+    width: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-soc {
+    width: 356px;
+  }
 }
 
 .mob-soc__item {
@@ -505,6 +514,12 @@ img {
 @media (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-resolution: 192dpi), (min-resolution: 192dpi) and (min-resolution: 2dppx), (min-resolution: 2dppx) and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) and (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--gradient), url(../img/header/Header-tablet_2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1380,9 +1395,9 @@ textarea::placeholder {
 .form-checkbox {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.1em;
   text-align: center;
   color: var(--color-primary);
 }
@@ -1396,13 +1411,6 @@ textarea::placeholder {
     font-size: 14px;
     line-height: 1.71;
   }
-}
-
-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var();
 }
 
 .modal-window {
@@ -1424,7 +1432,22 @@ textarea:focus {
   background-color: var(--color-blue);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox_input {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .checkbox_input {
   background-color: var(--color-blue);
   border-color: var(--color-blue);
   background-image: url(../img/icon_check.svg);
@@ -1432,15 +1455,6 @@ textarea:focus {
   background-position: 50% 50%;
   background-size: contain;
   background-origin: border-box;
-}
-
-.checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 4px;
-  margin-right: 7px;
 }
 
 .form-submit {
@@ -1482,8 +1496,9 @@ textarea:focus {
 }
 
 .text-submit {
-  font-size: 14px;
-  line-height: 1.71;
+  margin-left: 5px;
+  padding: 0;
+  margin: 0;
 }
 
 .button {
