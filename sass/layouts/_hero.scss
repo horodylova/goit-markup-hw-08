@@ -20,12 +20,12 @@
     }
 
     @media screen and (min-width:480px){
-        background-image: var(--gradient), url("/img/header/Header img_mob.jpg")
+        background-image: var(--gradient), url('img/header/Header_img_mob.jpg')
       }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-          background-image: var(--gradient), url("/img/header/Header img_retina.jpg") {
+          background-image: var(--gradient), url("img/header/Header_img_retina.jpg") {
       }
 
       @media screen and (min-width:768px) {
